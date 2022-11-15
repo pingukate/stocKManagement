@@ -52,7 +52,8 @@ combine the videos on the above like for CPU size and memory allocation could be
 
 Note:
 
-1. Target groups under load balancer must return a healthy check so that the service task wont get deregistered.
+1. Target groups under load balancer must return a healthy check so that the service task wont get deregistered and so check the health check tab conditions and also the reason for unhealthy instance.
+2. See to that the security group of load balancer is being mapped to ECS cluster instance created under inbound rules with all TCP
 
 For API Gateway, there were steps followed,
 
