@@ -50,6 +50,10 @@ Under the task definition creation,
 
 combine the videos on the above like for CPU size and memory allocation could be 500units and 1024mb, port and container port be 80 80 and 5000 5000
 
+Note:
+
+1. Target groups under load balancer must return a healthy check so that the service task wont get deregistered.
+
 For API Gateway, there were steps followed,
 
 1) get on to the api gateway and create new REST API.
