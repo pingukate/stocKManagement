@@ -10,13 +10,19 @@ For docker load,
 
 1)generate a docker file from ur visual studio through clicking on the solution with docker support, file will be generated
 sign in into docker hub with a username, have a repositary created with a name
+
 2)after then on command prompt under the path where docker file is present, give the commands
 a) dotnet run, if ran without error then proceed with the following
 b) dotnet publish -c release
+
 3)under docker desktop, login and then run on ur command line, with 'docker build -t ur_projectName .'
+
 4)give 'docker images' to see if ur project has been changed in to an image
+
 5)give 'docker tag projectName username/repositaryname', user name and repositary name are the names that are given in the docker hub also it tags local docker to online
+
 6)give 'docker push username/repositaryname' to push the docker
+
 7)to run a docker image in a new container give 'docker run -p 5000:80 estock', where -p is the port name and 80 could be the expose port and 5000 could be the local host we want to run in
 "http://localhost:5000/api/path......" could load the following
 
